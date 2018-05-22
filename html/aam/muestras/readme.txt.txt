@@ -1,0 +1,1 @@
+Aca estaran guardadas las muestras analizadas. Se puede realizar un scrip y ejecutarlo como cron para eliminarlas.
