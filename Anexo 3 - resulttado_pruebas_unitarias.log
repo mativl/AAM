@@ -1,0 +1,1091 @@
+#############################################################################################################
+############################################ File ###########################################################
+#############################################################################################################
+putty.exe: PE32+ executable (GUI) x86-64, for MS Windows
+#############################################################################################################
+############################################ String #########################################################
+#############################################################################################################
+.00cfg
+@.rdata
+@.bss
+.data
+.gfids
+.... Se elimino el resto por ser extenso
+#############################################################################################################
+############################################ Stat ###########################################################
+#############################################################################################################
+  Fichero: «putty.exe»
+  Tamaño: 854072    	Bloques: 1672       Bloque E/S: 4096   fichero regular
+Dispositivo: 801h/2049d	Nodo-i: 401129      Enlaces: 1
+Acceso: (0777/-rwxrwxrwx)  Uid: ( 1000/     upa)   Gid: ( 1000/     upa)
+      Acceso: 2018-05-18 02:39:37.615697826 -0500
+Modificación: 2018-04-06 11:32:33.000000000 -0500
+      Cambio: 2018-05-18 02:20:29.979725530 -0500
+    Creación: -
+#############################################################################################################
+############################################ ClamAV #########################################################
+#############################################################################################################
+/home/upa/Descargas/putty.exe: OK
+
+----------- SCAN SUMMARY -----------
+Known viruses: 6517802
+Engine version: 0.99.3
+Scanned directories: 0
+Scanned files: 1
+Infected files: 0
+Data scanned: 0.84 MB
+Data read: 0.81 MB (ratio 1.04:1)
+Time: 15.607 sec (0 m 15 s)
+#############################################################################################################
+############################################ FprotAV ########################################################
+#############################################################################################################
+
+F-PROT Antivirus CLS version 6.7.10.6267, 32bit (built: 2012-03-27T12-34-14)
+
+
+FRISK Software International (C) Copyright 1989-2011
+Engine version:   4.6.5.141
+Arguments:        /home/upa/Descargas/putty.exe 
+Virus signatures: 201212112210
+                  (/opt/f-prot/antivir.def)
+
+
+
+Results:
+
+Files: 1
+Skipped files: 0
+MBR/boot sectors checked: 0
+Objects scanned: 1
+Infected objects: 0
+Infected files: 0
+Files with errors: 0
+Disinfected: 0
+
+Running time: 00:00
+#############################################################################################################
+############################################ ComodoAV #######################################################
+#############################################################################################################
+-----== Scan Start ==-----
+/home/upa/Descargas/putty.exe ---> Not Virus
+-----== Scan End ==-----
+Number of Scanned Files: 1
+Number of Found Viruses: 0
+#############################################################################################################
+############################################ BitDefenderAV ##################################################
+#############################################################################################################
+BitDefender Antivirus Scanner for Unices v7.141118 Linux-amd64
+Copyright (C) 1996-2014 BitDefender. All rights reserved.
+Trial key found. 1 days remaining.
+
+Infected file action: ignore
+Suspected file action: ignore
+/home/upa/Descargas/putty.exe  ok
+
+
+Results:
+Folders            : 0
+Files              : 1
+Packed             : 0
+Archives           : 0
+Infected files     : 0
+Suspect files      : 0
+I/O errors         : 0
+
+#############################################################################################################
+############################################# Maldet (LMD) ##################################################
+#############################################################################################################
+Linux Malware Detect v1.6.2
+            (C) 2002-2017, R-fx Networks <proj@rfxn.com>
+            (C) 2017, Ryan MacDonald <ryan@rfxn.com>
+This program may be freely redistributed under the terms of the GNU GPL v2
+
+maldet(127043): {scan} signatures loaded: 15215 (12485 MD5 | 1951 HEX | 779 YARA | 0 USER)
+maldet(127043): {scan} building file list for /home/upa/Descargas/putty.exe, this might take awhile...
+maldet(127043): {scan} setting nice scheduler priorities for all operations: cpunice 19 , ionice 6
+maldet(127043): {scan} file list completed in 0s, found 8 files...
+maldet(127043): {scan} found clamav binary at /usr/bin/clamscan, using clamav scanner engine...
+maldet(127043): {scan} scan of /home/upa/Descargas/putty.exe (8 files) in progress...
+
+maldet(127043): {scan} scan completed on /home/upa/Descargas/putty.exe: files 8, malware hits 0, cleaned hits 0, time 16s
+maldet(127043): {scan} scan report saved, to view run: maldet --report 180518-0256.127043
+#############################################################################################################
+############################################# SSMA ##########################################################
+#############################################################################################################
+[1;36m
+███████╗███████╗███╗   ███╗ █████╗
+██╔════╝██╔════╝████╗ ████║██╔══██╗ Simple
+███████╗███████╗██╔████╔██║███████║ Static
+╚════██║╚════██║██║╚██╔╝██║██╔══██║ Malware
+███████║███████║██║ ╚═╝ ██║██║  ██║ Analyzer
+╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝
+[0;0m
+[;1m[93mFile Details: [0;0m
+	 File: /home/upa/Descargas/putty.exe
+	 Size: 854072 bytes
+	 Type: application/x-dosexec
+	 MD5:  54cb91395cdaad9d47882533c21fc0e9
+	 SHA1: 3b1333f826e5fe36395042fe0f1b895f4a373f1b
+	 Date: Wed Dec 31 19:00:00 1969
+	 PE file entropy: 6.5535033949266035
+
+================================================================================
+[1;31m[SUSPICIOUS NUMBER OF SECTIONS] - 11[0;0m
+
+Section VirtualAddress VirtualSize SizeofRawData Sections_MD5_Hash Section_Entropy
+.00cfg  0x1000                  16           512 c5e38376ea9d08963540841d68037be5 [91m0.1755262916558982[0;0m
+.rdata  0x2000              159320        159744 a804f42bdf96e49b98a3b3b464157927 5.80530559351922
+.bss    0x29000              18508             0 d41d8cd98f00b204e9800998ecf8427e [91m0.0[0;0m
+.data   0x2e000               3841          4096 526c11669005458d4cc2f46576973396 2.48879293155609
+.gfids  0x2f000                168           512 49681a20213d63663d7ec418a2cace36 1.783715882508858
+.pdata  0x30000              20028         20480 be60578dc1a357683c3e8158116cf2db 5.932488832748695
+.rsrc   0x35000              11952         12288 368f20a15bc516de96f3dd6be20bb10b 3.9256154098566967
+.text   0x38000             601174        601600 ce0bc05bb0229350d7cc2f5184f8893b 6.462061190397604
+.xdata  0xcb000              25740         26112 54a005e9c04202e768579bb700456c31 4.910521515122924
+.idata  0xd2000              11076         11264 68ad25baf4282b811aeb8a2209fdd4a3 4.690957014062106
+.reloc  0xd5000               4032          4096 02b1d28250bd30822d38c01d038153d1 5.355163281804758
+
+[1;31mSUSPICIOUS size of the section ".bss    " when stored in memory - 18508[0;0m
+
+[1;31mVery high or very low entropy means that file/section is compressed or encrypted since truly random data is not common.[0;0m
+
+[1;31mSuspicious size of the raw data - 0
+[0;0m
+[1;31mSUSPICIOUS section names: [0;0m.00cfg .gfids .pdata .xdata 
+================================================================================
+Overlay Data is present which is often associated with malware
+ Start offset: 0x000cd800
+ Size:         0x00003038 12.1 KB 1.45%
+ MD5:          2316ef39879a928b68db3da62fe0b874
+ SHA-256:      8612c03c58b836da1faefac667f64bfdb38396206e0bffe0833839b019dcc825
+ MAGIC:        b'38300000' 80..
+ PE file without overlay:
+  MD5:          14f719b13f71068bac48bf02de65e4d6
+  SHA-256:      47a0d054b5abe5e7a326e0c92b2ed3f76c27cc9507d203e27c1b30289c86e567
+================================================================================
+[1;31m [SUSPICIOUS COMPILATION DATE] - 1969[0;0m
+
+================================================================================
+[;1m[93mThis file contains a list of Windows functions commonly used by malware.
+For more information use the Microsoft documentation.
+[0;0m
+	[91mGetDC[0;0m - Returns a handle to a device context for a window or the whole screen. Spyware that takes screen captures often uses this function.
+	[91mGetForegroundWindow[0;0m - Returns a handle to the window currently in the foreground of the desktop. Keyloggers commonly use this function to determine in which window the user is entering his keystrokes.
+	[91mShellExecuteA[0;0m - Used to execute another program. If malware creates a new process, you will need to analyze the new process as well.
+	[91mCoCreateInstance[0;0m - Creates a COM object. COM objects provide a wide variety of functionality. The class identifier (CLSID) will tell you which file contains the code that implements the COM object. See Chapter 7 for an in-depth explanation of COM.
+	[91mRegOpenKeyA[0;0m - Opens a handle to a registry key for reading and editing. Registry keys are sometimes written as a way for software to achieve persistence on a host. The registry also contains a whole host of operating system and application setting information.
+	[91mConnectNamedPipe[0;0m - Used to create a server pipe for interprocess communication that will wait for a client pipe to connect. Backdoors and reverse shells sometimes use ConnectNamedPipe to simplify connectivity to a command-and-control server.
+	[91mCreateFileA[0;0m - Creates a new file or opens an existing file.
+	[91mCreateFileMappingA[0;0m - Creates a handle to a file mapping that loads a file into memory and makes it accessible via memory addresses. Launchers, loaders, and injectors use this function to read and modify PE files.
+	[91mCreateFileMappingA[0;0m - Creates a new file or opens an existing file.
+	[91mCreateFileW[0;0m - Creates a new file or opens an existing file.
+	[91mCreateMutexA[0;0m - Creates a mutual exclusion object that can be used by malware to ensure that only a single instance of the malware is running on a system at any given time. Malware often uses fixed names for mutexes, which can be good host-based indicators to detect additional installations of the malware.
+	[91mCreateProcessA[0;0m - Creates and launches a new process. If malware creates a new process, you will need to analyze the new process as well.
+	[91mGetModuleHandleA[0;0m - Used to obtain a handle to an already loaded module. Malware may use GetModuleHandle to locate and modify code in a loaded module or to search for a good location to inject code.
+	[91mGetModuleHandleExW[0;0m - Used to obtain a handle to an already loaded module. Malware may use GetModuleHandle to locate and modify code in a loaded module or to search for a good location to inject code.
+	[91mGetModuleHandleW[0;0m - Used to obtain a handle to an already loaded module. Malware may use GetModuleHandle to locate and modify code in a loaded module or to search for a good location to inject code.
+	[91mGetProcAddress[0;0m - Retrieves the address of a function in a DLL loaded into memory. Used to import functions from other DLLs in addition to the functions imported in the PE file header.
+	[91mGetStartupInfoW[0;0m - Retrieves a structure containing details about how the current process was configured to run, such as where the standard handles are directed.
+	[91mGetTickCount[0;0m - Retrieves the number of milliseconds since bootup. This function is sometimes used to gather timing information as an anti-debugging technique. GetTickCount is often added by the compiler and is included in many executables, so simply seeing it as an imported function provides little information.
+	[91mGetVersionExA[0;0m - Returns information about which version of Windows is currently running. This can be used as part of a victim survey or to select between different offsets for undocumented structures that have changed between different versions of Windows.
+	[91mGetWindowsDirectoryA[0;0m - Returns the file path to the Windows directory (usually C:\Windows). Malware sometimes uses this call to determine into which directory to install additional malicious programs.
+	[91mIsDebuggerPresent[0;0m - Checks to see if the current process is being debugged, often as part oan anti-debugging technique. This function is often added by the compiler and is included in many executables, so simply seeing it as an imported function provides little information.
+	[91mLoadLibraryA[0;0m - Loads a DLL into a process that may not have been loaded when the program started. Imported by nearly every Win32 program.
+	[91mLoadLibraryExA[0;0m - Loads a DLL into a process that may not have been loaded when the program started. Imported by nearly every Win32 program.
+	[91mLoadLibraryExW[0;0m - Loads a DLL into a process that may not have been loaded when the program started. Imported by nearly every Win32 program.
+	[91mMapViewOfFile[0;0m - Maps a file into memory and makes the contents of the file accessible via memory addresses. Launchers, loaders, and injectors use this function to read and modify PE files. By using MapViewOfFile , the malware can avoid using WriteFile to modify the contents of a file.
+	[91mOpenProcess[0;0m - Opens a handle to another process running on the system. This handle can be used to read and write to the other process memory or to inject code into the other process.
+	[91mOutputDebugStringW[0;0m - Outputs a string to a debugger if one is attached. This can be used as an anti-debugging technique.
+	[91mQueryPerformanceCounter[0;0m - Used to retrieve the value of the hardware-based performance counter. This function is sometimes using to gather timing information as part of an anti-debugging technique. It is often added by the compiler and is included in many executables, so simply seeing it as an imported function provides little information.
+	[91mWideCharToMultiByte[0;0m - Used to convert a Unicode string into an ASCII string.
+
+================================================================================
+[;1m[93mPossible domains in strings of the file: [0;0m
+	 secure.comodo.net
+	 crl.usertrust.com
+	 ocsp.comodoca.com0
+	 www.usertrust.com1
+	 www.chiark.greenend.org.uk
+	 crl.comodoca.com
+	 crt.comodoca.com
+	 ocsp.usertrust.com0
+
+
+================================================================================
+[;1m[93mPossible IP addresses in strings of the file: [0;0m
+	 0.0.0.0
+	 0.0.0.0
+
+================================================================================
+[;1m[93mPossible E-Mail addresses in strings of the file:[0;0m
+	 SSHCONNECTION@putty.projects.tartarus.org-
+	 simple@putty.projects.tartarus.org
+	 auth-agent@openssh.com
+	 auth-agent-req@openssh.com
+	 winadj@putty.projects.tartarus.org
+	 rijndael-cbc@lysator.liu.se
+	 chacha20-poly1305@openssh.com
+	 des-cbc@ssh.com
+	 curve25519-sha256@libssh.org
+	 hmac-md5-etm@openssh.com
+	 hmac-sha2-256-etm@openssh.com
+	 hmac-sha1-etm@openssh.com
+	 hmac-sha1-96-etm@openssh.com
+	 SSHCONNECTION@putty.projects.tartarus.org-2.0-
+	 SSHCONNECTION@putty.projects.tartarus.org-2.0-
+	 zlib@openssh.com
+
+================================================================================
+[;1m[93mScan file using Yara-rules.
+With Yara rules you can create a "description" of malware families to detect new samples.
+[;1m[1;36m	For more information: https://virustotal.github.io/yara/
+[0;0m
+[;1m[93mThese Yara rules specialised on the identification of well-known malware.
+Result: [0;0m
+	 Str_Win32_Winsock2_Library - Match Winsock 2 API library declaration
+
+================================================================================
+[;1m[93mThese Yara Rules aimed to detect well-known sofware packers, that can be used by malware to hide itself.
+Result: [0;0m
+	 Microsoft_Visual_Cpp_80_DLL
+
+================================================================================
+[;1m[93mThese Yara rules aimed to detect the existence of cryptographic algoritms.[0;0m
+[93mDetected cryptographic algorithms: [0;0m
+	 CRC32_poly_Constant - Look for CRC32 [poly]
+	 CRC32_table - Look for CRC32 table
+	 BLOWFISH_Constants - Look for Blowfish constants
+	 MD5_Constants - Look for MD5 constants
+	 RIPEMD160_Constants - Look for RIPEMD-160 constants
+	 SHA1_Constants - Look for SHA1 constants
+	 SHA512_Constants - Look for SHA384/SHA512 constants
+	 DES_sbox - DES [sbox]
+	 RijnDael_AES - RijnDael AES
+	 RijnDael_AES_CHAR - RijnDael AES (check2) [char]
+	 RijnDael_AES_LONG - RijnDael AES
+	 BASE64_table - Look for Base64 table
+
+================================================================================
+[;1m[93mThese Yara Rules aimed to detect anti-debug and anti-virtualization techniques used by malware to evade automated analysis.
+Result: [0;0m
+	 anti_dbg - Checks if being debugged
+	 network_tcp_listen - Listen for incoming communication
+	 network_tcp_socket - Communications over RAW socket
+	 network_dns - Communications use DNS
+	 screenshot - Take screenshot
+	 win_mutex - Create or check mutex
+	 win_registry - Affect system registries
+	 win_token - Affect system token
+	 win_files_operation - Affect private profile
+
+================================================================================
+[93mUps... [1;36mThat's all :)[0;0m
+
+
+#############################################################################################################
+############################################# Peframe #######################################################
+#############################################################################################################
+Peframe v. 5.0.1
+
+Short information
+------------------------------------------------------------
+File type       PE32+ executable (GUI) x86-64, for MS Windows
+File name       putty.exe
+File size       854072
+Hash MD5        54cb91395cdaad9d47882533c21fc0e9
+Compile time    1969-12-31 19:00:00
+Sections        11 (2 suspicious)
+Directories     import, resource, relocation, security
+Detected        sign, packer, mutex, antidbg, antivm
+Import Hash     efe162fd3d51ded9dd66fa4ac219bf53
+
+Paker info
+------------------------------------------------------------
+Microsoft Visual C++ 8.0 (DLL)
+
+Resources info
+------------------------------------------------------------
+RT_ICON         816      (0`0x??n?|~~w C<`???>?<80 ? <|<<|||
+RT_DIALOG       138      22FPuTTY LicenceMS Shell DlgP,OKP  
+RT_GROUP_ICON   90       ( 00h   0 000 
+RT_VERSION      764      4VS_VERSION_INFOFF \StringFileInfo8
+RT_MANIFEST     1231     <?xml version="1.0" encoding="UTF-8
+
+Sections suspicious
+------------------------------------------------------------
+hash_md5        c5e38376ea9d08963540841d68037be5
+virtual_address 0x1000
+name            .00cfg  
+size_raw_data   512
+suspicious      True
+hash_sha1       5c5e772b8c547e1e22a2985480bf4134c42fb57b
+virtual_size    0x10
+
+hash_md5        d41d8cd98f00b204e9800998ecf8427e
+virtual_address 0x29000
+name            .bss    
+size_raw_data   0
+suspicious      True
+hash_sha1       da39a3ee5e6b4b0d3255bfef95601890afd80709
+virtual_size    0x484c
+
+Import function
+------------------------------------------------------------
+COMDLG32.dll    4
+GDI32.dll       46
+SHELL32.dll     1
+KERNEL32.dll    129
+ADVAPI32.dll    17
+ole32.dll       3
+USER32.dll      112
+IMM32.dll       5
+
+AntiVM info
+------------------------------------------------------------
+Bochs & QEmu CPUID Trick
+
+Antidbg info
+------------------------------------------------------------
+FindWindowA
+GetLastError
+IsDebuggerPresent
+IsProcessorFeaturePresent
+OutputDebugStringW
+RaiseException
+TerminateProcess
+UnhandledExceptionFilter
+
+Mutex info
+------------------------------------------------------------
+CreateMutexA
+ReleaseMutex
+WaitForSingleObject
+WaitForSingleObjectEx
+
+Apialert info
+------------------------------------------------------------
+CloseHandle
+ConnectNamedPipe
+CreateFileA
+CreateFileMappingA
+CreateFileW
+CreateMutexA
+CreateProcessA
+CreateThread
+DeleteCriticalSection
+DeleteFileA
+ExitProcess
+FindFirstFileA
+FindFirstFileExA
+FindNextFileA
+FindWindowA
+GetCommandLineA
+GetCommandLineW
+GetCurrentProcess
+GetCurrentProcessId
+GetModuleFileNameA
+GetModuleFileNameW
+GetModuleHandleA
+GetModuleHandleExW
+GetModuleHandleW
+GetProcAddress
+GetStartupInfoW
+GetSystemDirectoryA
+GetTickCount
+GetUserNameA
+GetVersionExA
+GetWindowsDirectoryA
+HeapAlloc
+InitializeCriticalSectionAndSpinCount
+IsDebuggerPresent
+LoadLibraryA
+LoadLibraryExA
+LoadLibraryExW
+MapViewOfFile
+MessageBoxA
+MessageBoxIndirectA
+OpenProcess
+OutputDebugStringW
+ReadFile
+RegCloseKey
+RegCreateKeyA
+RegCreateKeyExA
+RegDeleteKeyA
+RegDeleteValueA
+RegEnumKeyA
+RegOpenKeyA
+ReleaseMutex
+SetFilePointerEx
+SetKeyboardState
+ShellExecuteA
+TerminateProcess
+UnhandledExceptionFilter
+WaitForSingleObject
+WaitForSingleObjectEx
+WriteFile
+
+Sign info
+------------------------------------------------------------
+hash_md5        2330ffc8717c249564bb78bd7c7c2954
+block_size      12344
+hash_sha1       c955080bae7c70d1e7e613f23f0b26ee1b6ed335
+virtual_address 841728
+
+Filename found
+------------------------------------------------------------
+Object          hhctrl.ocx
+Log             putty.log
+Library         mscoree.dll
+Library         sspicli.dll
+Library         secur32.dll
+Library         crypt32.dll
+Library         IMM32.dll
+Library         ADVAPI32.dll
+Library         Using SSPI from SECUR32.DLL
+Library         MIT Kerberos GSSAPI32.DLL
+Library         *.dll
+Library         user32.dll
+Library         i32.dll
+Library         COMDLG32.dll
+Library         ole32.dll
+Library         KERNEL32.dll
+Library         Shell32.dll
+Library         comctl32.dll
+Library         spoolss.dll
+Library         wsock32.dll
+Library         GDI32.dll
+Library         Microsoft SSPI SECUR32.DLL
+Library         winmm.dll
+Library         Using GSSAPI from GSSAPI32.DLL
+Library         wship6.dll
+Library         ws2_32.dll
+
+Url found
+------------------------------------------------------------
+http://llvm.org/git/llvm.git
+http://www.usertrust.com1
+https://www.chiark.greenend.org.uk/~sgtatham/putty/0
+http://llvm.org/git/clang.git
+http://ocsp.comodoca.com0
+http://crl.usertrust.com/AddTrustExternalCARoot.crl05
+http://crl.usertrust.com/UTN-USERFirst-Object.crl05
+http://crt.comodoca.com/COMODOSHA256CodeSigningCA.crt0$
+https://www.chiark.greenend.org.uk/~sgtatham/putty/
+http://crl.comodoca.com/COMODOSHA256CodeSigningCA.crl0w
+http://ocsp.usertrust.com0
+https://secure.comodo.net/CPS0F
+http://schemas.microsoft.com/SMI/2005/WindowsSettings
+
+Meta info
+------------------------------------------------------------
+LegalCopyright  Copyright \xa9 1997-2017 Simon Tatham.
+InternalName    PuTTY
+FileVersion     Release 0.70
+CompanyName     Simon Tatham
+ProductName     PuTTY suite
+ProductVersion  Release 0.70
+FileDescription SSH, Telnet and Rlogin client
+Translation     0x0809 0x04b0
+OriginalFilename PuTTY
+#############################################################################################################
+############################################# Pev - readpe ##################################################
+#############################################################################################################
+DOS Header
+    Magic number:                    0x5a4d (MZ)
+    Bytes in last page:              0
+    Pages in file:                   0
+    Relocations:                     0
+    Size of header in paragraphs:    0
+    Minimum extra paragraphs:        0
+    Maximum extra paragraphs:        0
+    Initial (relative) SS value:     0
+    Initial SP value:                0
+    Initial IP value:                0
+    Initial (relative) CS value:     0
+    Address of relocation table:     0x40
+    Overlay number:                  0
+    OEM identifier:                  0
+    OEM information:                 0
+    PE header offset:                0x40
+COFF/File header
+    Machine:                         0x8664 IMAGE_FILE_MACHINE_AMD64
+    Number of sections:              11
+    Date/time stamp:                 0 (Thu, 01 Jan 1970 00:00:00 UTC)
+    Symbol Table offset:             0
+    Number of symbols:               0
+    Size of optional header:         0xf0
+    Characteristics:                 0x22
+    Characteristics names
+                                         IMAGE_FILE_EXECUTABLE_IMAGE
+                                         IMAGE_FILE_LARGE_ADDRESS_AWARE
+Optional/Image header
+    Magic number:                    0x20b (PE32+)
+    Linker major version:            14
+    Linker minor version:            0
+    Size of .text section:           0x92e00
+    Size of .data section:           0x3a600
+    Size of .bss section:            0
+    Entrypoint:                      0xa9384
+    Address of .text section:        0x38000
+    ImageBase:                       0x140000000
+    Alignment of sections:           0x1000
+    Alignment factor:                0x200
+    Major version of required OS:    6
+    Minor version of required OS:    0
+    Major version of image:          0
+    Minor version of image:          0
+    Major version of subsystem:      6
+    Minor version of subsystem:      0
+    Size of image:                   0xd5400
+    Size of headers:                 0x400
+    Checksum:                        0xd315d
+    Subsystem required:              0x2 (IMAGE_SUBSYSTEM_WINDOWS_GUI)
+    DLL characteristics:             0x8960
+    DLL characteristics names
+                                         IMAGE_DLLCHARACTERISTICS_DYNAMIC_BASE
+                                         IMAGE_DLLCHARACTERISTICS_NX_COMPAT
+                                         IMAGE_DLLCHARACTERISTICS_NO_BIND
+                                         IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE
+    Size of stack to reserve:        0x100000
+    Size of stack to commit:         0x1000
+    Size of heap space to reserve:   0x100000
+    Size of heap space to commit:    0x1000
+Data directories
+    Directory
+        IMAGE_DIRECTORY_ENTRY_IMPORT:    0xd2000 (180 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_RESOURCE:  0x35000 (11952 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_EXCEPTION: 0x30000 (20028 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_SECURITY:  0xcd800 (12344 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_BASERELOC: 0xd5000 (4032 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG: 0x20ba0 (148 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_IAT:       0xd2adc (2600 bytes)
+Imported functions
+    Library
+        Name:                            GDI32.dll
+        Functions
+            Function
+                Name:                            CreateBitmap
+            Function
+                Name:                            CreateCompatibleBitmap
+                Name:                            WriteFile
+                ...... Se eliminaron por ser extenso
+Sections
+    Section
+        Name:                            .00cfg
+        Virtual Address:                 0x1000
+        Physical Address:                0x10
+        Size:                            0x200 (512 bytes)
+        Pointer To Data:                 0x400
+        Relocations:                     0
+        Characteristics:                 0x40000040
+        Characteristic Names
+                                             IMAGE_SCN_CNT_INITIALIZED_DATA
+                                             IMAGE_SCN_MEM_READ
+    Section
+        Name:                            .reloc
+        Virtual Address:                 0xd5000
+        Physical Address:                0xfc0
+        Size:                            0x1000 (4096 bytes)
+        Pointer To Data:                 0xcc800
+        Relocations:                     0
+        Characteristics:                 0x42000040
+        Characteristic Names
+                                             IMAGE_SCN_CNT_INITIALIZED_DATA
+                                             IMAGE_SCN_MEM_DISCARDABLE
+                                             IMAGE_SCN_MEM_READ
+#############################################################################################################
+############################################# Pev - readpe dir ##############################################
+#############################################################################################################
+Data directories
+    Directory
+        IMAGE_DIRECTORY_ENTRY_IMPORT:    0xd2000 (180 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_RESOURCE:  0x35000 (11952 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_EXCEPTION: 0x30000 (20028 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_SECURITY:  0xcd800 (12344 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_BASERELOC: 0xd5000 (4032 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG: 0x20ba0 (148 bytes)
+    Directory
+        IMAGE_DIRECTORY_ENTRY_IAT:       0xd2adc (2600 bytes)
+#############################################################################################################
+############################################# Pev - readpe fxi ##############################################
+#############################################################################################################
+Imported functions
+    Library
+        Name:                            GDI32.dll
+        Functions
+            Function
+                Name:                            CreateBitmap
+            Function
+                Name:                            CreateCompatibleBitmap
+.... Se elimino el resto por ser extenso
+#############################################################################################################
+############################################# Pev - readpe fxe ##############################################
+#############################################################################################################
+....Esta vacio porque no posee
+#############################################################################################################
+############################################# Pev - pehash ##################################################
+#############################################################################################################
+file
+    filepath:                        /home/upa/Descargas/putty.exe
+    md5:                             54cb91395cdaad9d47882533c21fc0e9
+    sha1:                            3b1333f826e5fe36395042fe0f1b895f4a373f1b
+    sha256:                          7afb56dd48565c3c9804f683c80ef47e5333f847f2d3211ec11ed13ad36061e1
+    ssdeep:                          12288:WQp6ALLEUO5QeUyccL4Gug+gDaM4EQNLXd4fx139U76NAaNZBA/JO:WG6co5RQs4N2kE0L8139O0A0nAhO
+    imphash:                         70075313c13d6a27bedcf9675ad2f96c
+headers
+    header
+        header_name:                     IMAGE_DOS_HEADER
+        md5:                             26d6351913e3e756c050670798a6842c
+        sha1:                            70c145f965ea21c02a18973aadc37f0dbbf4401c
+        sha256:                          c7407b7d2e8d71d84b5562dd5eead623a8328dbd5ac4e5e4e66cf3011cacba09
+        ssdeep:                          3:Gltl1lll:y3
+    header
+        header_name:                     IMAGE_COFF_HEADER
+        md5:                             b23c7afce0f1435cc705b66f4696c967
+        sha1:                            fad034b875d9b356fa0740c6031171b59016c07c
+        sha256:                          c9a37052c40c018369948d65a9047b72a574ad705a6354cd9ad299626a4e249d
+        ssdeep:                          3:Vuld:Eld
+    header
+        header_name:                     IMAGE_OPTIONAL_HEADER
+        md5:                             fcedb450395aa3f59d319f531bf185fd
+        sha1:                            b4d79efd5efe9fd355ed0a12e19d2b93fcc143ba
+        sha256:                          7d1697bf0fa40a268a918e0241f68879d42ef63598614380a966683c048a8b0e
+        ssdeep:                          3:2/IZmlllY9llPPl5vxiIlF0XllFllNllFllX:HZmtYHD0V
+sections
+    section
+        section_name:                    .00cfg
+        md5:                             c5e38376ea9d08963540841d68037be5
+        sha1:                            5c5e772b8c547e1e22a2985480bf4134c42fb57b
+        sha256:                          36e28039b630b046c14bbc419c75c9643c16cbf2d951f852aebe8804bda18295
+        ssdeep:                          3:0yll:0yll
+    section
+        section_name:                    .rdata
+        md5:                             a804f42bdf96e49b98a3b3b464157927
+        sha1:                            4967bbd97d91f5a5adab659d809b38286f559c53
+        sha256:                          e935389539c15e37a0703d3090d80ae8d1435c17c14286248d403bb9654ccebf
+        ssdeep:                          3072:p1KUDMmjEPIN7rMtDGPYM0KrWrfEWfA2hhChke3nX248OZB9nlvT2UT9mIn+6Jd:lgNM03RfE1Xc6ALNtc
+#############################################################################################################
+############################################# Pev - pescan ##################################################
+#############################################################################################################
+file entropy:                    6.553503 (normal)
+fpu anti-disassembly:            no
+imagebase:                       suspicious - 0x140000000
+entrypoint:                      normal - va: 0xa9384 - raw: 0xa1b84
+DOS stub:                        suspicious - raw: 0
+TLS directory:                   not found
+timestamp:                       zero/invalid - Thu, 01 Jan 1970 00:00:00 UTC
+section count:                   11 (high)
+sections
+    section
+        .00cfg:                          suspicious name, small length
+    section
+        .rdata:                          normal
+    section
+        .bss:                            zero length
+    section
+        .data:                           normal
+    section
+        .gfids:                          small length
+    section
+        .pdata:                          normal
+    section
+        .rsrc:                           normal
+    section
+        .text:                           normal
+    section
+        .xdata:                          normal
+    section
+        .idata:                          normal
+    section
+        .reloc:                          normal
+#############################################################################################################
+############################################# Pev - pestr ###################################################
+#############################################################################################################
+0x148	[none]	.00cfg
+0x16f	[none]	@.rdata
+0x197	[none]	@.bss
+0x1c0	[none]	.data
+.... Se elimino el resto por ser extenso
+#############################################################################################################
+############################################# Pev - pepack ##################################################
+#############################################################################################################
+packer:                          no packer found
+#############################################################################################################
+############################################# Pescanner #####################################################
+#############################################################################################################
+################################################################################
+Record 0
+################################################################################
+
+Meta-data
+================================================================================
+File:    /home/upa/Descargas/putty.exe
+Size:    854072 bytes
+Type:    PE32+ executable (GUI) x86-64, for MS Windows
+MD5:     54cb91395cdaad9d47882533c21fc0e9
+SHA1:    3b1333f826e5fe36395042fe0f1b895f4a373f1b
+ssdeep:  
+Date:    0x0        [Thu Jan  1 00:00:00 1970 UTC] [SUSPICIOUS]
+EP:      0x1400a9384 .text 7/11
+CRC:     Claimed: 0xd315d, Actual: 0xd315d 
+
+Resource entries
+================================================================================
+Name               RVA      Size     Lang         Sublang                  Type
+--------------------------------------------------------------------------------
+RT_ICON            0x35448  0x128    LANG_ENGLISH SUBLANG_ENGLISH_US       GLS_BINARY_LSB_FIRST
+RT_ICON            0x35570  0x2e8    LANG_ENGLISH SUBLANG_ENGLISH_US       dBase IV DBT of @.DBF, block length 512, next free block index 40, next free block 202099788, next used block 35015
+RT_ICON            0x35858  0x668    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_ICON            0x35ec0  0xb0     LANG_ENGLISH SUBLANG_ENGLISH_US       GLS_BINARY_LSB_FIRST
+RT_ICON            0x35f70  0x130    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_ICON            0x360a0  0x330    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_ICON            0x363d0  0x128    LANG_ENGLISH SUBLANG_ENGLISH_US       GLS_BINARY_LSB_FIRST
+RT_ICON            0x364f8  0x2e8    LANG_ENGLISH SUBLANG_ENGLISH_US       dBase IV DBT of @.DBF, block length 512, next free block index 40, next free block 202099788, next used block 35015
+RT_ICON            0x367e0  0x668    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_ICON            0x36e48  0xb0     LANG_ENGLISH SUBLANG_ENGLISH_US       GLS_BINARY_LSB_FIRST
+RT_ICON            0x36ef8  0x130    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_ICON            0x37028  0x330    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_DIALOG          0x37358  0x76     LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_DIALOG          0x373d0  0xba     LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_DIALOG          0x37490  0xfa     LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_DIALOG          0x37590  0x8a     LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_GROUP_ICON      0x37620  0x5a     LANG_ENGLISH SUBLANG_ENGLISH_US       MS Windows icon resource - 6 icons, 16x16, 16 colors
+RT_GROUP_ICON      0x37680  0x5a     LANG_ENGLISH SUBLANG_ENGLISH_US       MS Windows icon resource - 6 icons, 16x16, 16 colors
+RT_VERSION         0x376e0  0x2fc    LANG_ENGLISH SUBLANG_ENGLISH_US       data
+RT_MANIFEST        0x379e0  0x4cf    LANG_ENGLISH SUBLANG_ENGLISH_US       XML document text
+
+Suspicious IAT alerts
+================================================================================
+ShellExecuteA
+CreateProcessA
+OpenProcess
+
+Sections
+================================================================================
+Name       VirtAddr     VirtSize     RawSize      Entropy     
+--------------------------------------------------------------------------------
+.00cfg     0x1000       0x10         0x200        0.175526    [SUSPICIOUS]
+.rdata     0x2000       0x26e58      0x27000      5.805306    
+.bss       0x29000      0x484c       0x0          0.000000    [SUSPICIOUS]
+.data      0x2e000      0xf01        0x1000       2.488793    
+.gfids     0x2f000      0xa8         0x200        1.783716    
+.pdata     0x30000      0x4e3c       0x5000       5.932489    
+.rsrc      0x35000      0x2eb0       0x3000       3.925615    
+.text      0x38000      0x92c56      0x92e00      6.462061    
+.xdata     0xcb000      0x648c       0x6600       4.910522    
+.idata     0xd2000      0x2b44       0x2c00       4.690957    
+.reloc     0xd5000      0xfc0        0x1000       5.355163    
+
+Version info
+================================================================================
+LegalCopyright: Copyright \xa9 1997-2017 Simon Tatham.
+InternalName: PuTTY
+FileVersion: Release 0.70
+CompanyName: Simon Tatham
+ProductName: PuTTY suite
+ProductVersion: Release 0.70
+FileDescription: SSH, Telnet and Rlogin client
+OriginalFilename: PuTTY
+Translation: 0x0809 0x04b0
+
+#############################################################################################################
+############################################# PackerId ######################################################
+#############################################################################################################
+None
+#############################################################################################################
+############################################# VirtusTotal ###################################################
+#############################################################################################################
+
+Scanned on : 
+	2018-05-18 17:11:30
+
+Detections:
+	 0/67 Positives/Total
+
+	Results for MD5    : 54cb91395cdaad9d47882533c21fc0e9
+	Results for SHA1   : 3b1333f826e5fe36395042fe0f1b895f4a373f1b
+	Results for SHA256 : 7afb56dd48565c3c9804f683c80ef47e5333f847f2d3211ec11ed13ad36061e1
+
+Verbose VirusTotal Information Output:
+
+	Permanent Link : https://www.virustotal.com/file/7afb56dd48565c3c9804f683c80ef47e5333f847f2d3211ec11ed13ad36061e1/analysis/1526663490/
+
+#############################################################################################################
+############################################# TrId ##########################################################
+#############################################################################################################
+
+TrID/32 - File Identifier v2.24 - (C) 2003-16 By M.Pontello
+Definitions found:  10068
+Analyzing...
+
+Collecting data from file: /home/upa/Descargas/putty.exe
+ 25.1% (.EXE) DOS Executable Borland Pascal 7.0x (2035/25)
+ 25.0% (.EXE) OS/2 Executable (generic) (2029/13)
+ 24.7% (.EXE) Generic Win/DOS Executable (2002/3)
+ 24.7% (.EXE) DOS Executable Generic (2000/1)
+  0.3% (.VXD) VXD Driver (31/22)
+#############################################################################################################
+############################################# Yara ##########################################################
+#############################################################################################################
+....Esta vacio porque no tiene coincidencias
+#############################################################################################################
+############################################## Ssdeep #######################################################
+#############################################################################################################
+ssdeep,1.1--blocksize:hash:hash,filename
+12288:WQp6ALLEUO5QeUyccL4Gug+gDaM4EQNLXd4fx139U76NAaNZBA/JO:WG6co5RQs4N2kE0L8139O0A0nAhO,"/home/upa/Descargas/putty.exe"
+#############################################################################################################
+############################################## Origami - Cop ################################################
+#############################################################################################################
+[0;36;49m[2018-05-18 02:58:35 -0500][0m [0;32;49mPDFcop is running on target `/home/upa/Descargas/prueba_pdf.pdf', policy = `standard'[0m
+[0;36;49m[2018-05-18 02:58:35 -0500][0m [0;35;49m  File size: 64513 bytes[0m
+[0;36;49m[2018-05-18 02:58:35 -0500][0m [0;35;49m  SHA256: 427c624dc3704ba10e68cea4fc280cbf45e48b4bb7373db5c35a4e1e131ffae8[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;33;49m> Inspecting document structure...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;33;49m> Inspecting document catalog...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;33;49m> Inspecting JavaScript names directory...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;33;49m> Inspecting attachment names directory...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;33;49m> Inspecting document pages...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;39;49m  >> Inspecting page...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;33;49m> Inspecting document streams...[0m
+[0;36;49m[2018-05-18 02:58:36 -0500][0m [0;32;49mDocument accepted by policy `standard'.[0m
+#############################################################################################################
+############################################## Origami - Metadata ###########################################
+#############################################################################################################
+[0;35;49m[*] Document information dictionary:[0m
+[0;32;49mAuthor              [0m: ub
+[0;32;49mCreator             [0m: Microsoft® Word 2016
+[0;32;49mCreationDate        [0m: D:20180518163515-05'00
+[0;32;49mModDate             [0m: D:20180518163515-05'00
+[0;32;49mProducer            [0m: Microsoft® Word 2016
+
+#############################################################################################################
+############################################## PdfId ########################################################
+#############################################################################################################
+PDFiD 0.2.4 /home/upa/Descargas/prueba_pdf.pdf
+ PDF Header: %PDF-1.5
+ obj                   24
+ endobj                24
+ stream                 6
+ endstream              6
+ xref                   2
+ trailer                2
+ startxref              2
+ /Page                  1
+ /Encrypt               0
+ /ObjStm                1
+ /JS                    0
+ /JavaScript            0
+ /AA                    0
+ /OpenAction            0
+ /AcroForm              0
+ /JBIG2Decode           0
+ /RichMedia             0
+ /Launch                0
+ /EmbeddedFile          0
+ /XFA                   0
+ /URI                   0
+ /Colors > 2^24         0
+
+#############################################################################################################
+############################################## Pdf-Parser ###################################################
+#############################################################################################################
+PDF Comment '%PDF-1.5\r\n'
+
+PDF Comment '%\xb5\xb5\xb5\xb5\r\n'
+
+obj 1 0
+ Type: /Catalog
+ Referencing: 2 0 R, 17 0 R
+
+  <<
+    /Type /Catalog
+    /Pages 2 0 R
+    /Lang (en-US)
+    /StructTreeRoot 17 0 R
+    /MarkInfo
+      <<
+        /Marked true
+      >>
+  >>
+.... Se elimino el resto por ser extenso
+#############################################################################################################
+############################################## PyOlescanner #################################################
+#############################################################################################################
++-------------------------------+
+
+| OLE Scanner v. 1.2
+
+| by Giuseppe 'Evilcry' Bonfa
+
++-------------------------------+
+
+[-] OLE File Seems Valid
+
+[+] Hash Informations
+
+MD5: 51ce2eb68dba3ebdab992b7d5e499afb
+SHA-1: c2e49e0f5b83f8f06ae1b3363be13fd7dee015d8
+[+] Scanning for Embedded OLE in Clean
+
+No Embeddd OLE Found 
+
+[+] Scanning for API presence in Clean
+
+No Embedded API Found
+
+
+[+] Scanning for Embedded Executables - Clean Case
+
+No Embedded Executables Found
+
+[+] Scanning for Shellcode Presence
+
+No Shellcode Revealed
+
+[+] Scanning for MACROs
+
+==========================================
+
+No MACROs Revealed
+[+] Starting XOR Attack..
+
+('Testing Key: ', '0x0')
+('Testing Key: ', '0x1')
+[+] Scanning for Embedded OLE - XOR Case
+
+('An Error Occurred:', 'no such table: BWList')
+#############################################################################################################
+############################################## OleId ########################################################
+#############################################################################################################
+oleid 0.51 - http://decalage.info/oletools
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/oletools/issues
+
+Filename: /home/upa/Descargas/prueba_doc.doc
++-------------------------------+-----------------------+
+| Indicator                     | Value                 |
++-------------------------------+-----------------------+
+| OLE format                    | True                  |
+| Has SummaryInformation stream | True                  |
+| Application name              | Microsoft Office Word |
+| Encrypted                     | False                 |
+| Word Document                 | True                  |
+| VBA Macros                    | False                 |
+| Excel Workbook                | False                 |
+| PowerPoint Presentation       | False                 |
+| Visio Drawing                 | False                 |
+| ObjectPool                    | False                 |
+| Flash objects                 | 0                     |
++-------------------------------+-----------------------+
+
+#############################################################################################################
+############################################## Olemeta ######################################################
+#############################################################################################################
+olemeta 0.51 - http://decalage.info/python/oletools
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/oletools/issues
+===============================================================================
+FILE: /home/upa/Descargas/prueba_doc.doc
+
+Properties from the SummaryInformation stream:
++---------------------+------------------------------+
+|Property             |Value                         |
++---------------------+------------------------------+
+|codepage             |1252                          |
+|title                |                              |
+|subject              |                              |
+|author               |usuario                       |
+|keywords             |                              |
+|comments             |                              |
+|template             |PLANTILLA1                    |
+|last_saved_by        |Matias Vallarino              |
+|revision_number      |5                             |
+|total_edit_time      |10680                         |
+|create_time          |2009-03-25 00:14:00           |
+|last_saved_time      |2017-10-10 20:27:00           |
+|num_pages            |8                             |
+|num_words            |1143                          |
+|num_chars            |6516                          |
+|creating_application |Microsoft Office Word         |
+|security             |0                             |
++---------------------+------------------------------+
+
+Properties from the DocumentSummaryInformation stream:
++---------------------+------------------------------+
+|Property             |Value                         |
++---------------------+------------------------------+
+|codepage_doc         |1252                          |
+|lines                |54                            |
+|paragraphs           |15                            |
+|scale_crop           |False                         |
+|company              |                              |
+|links_dirty          |False                         |
+|chars_with_spaces    |7644                          |
+|shared_doc           |False                         |
+|hlinks_changed       |False                         |
+|version              |1048576                       |
++---------------------+------------------------------+
+#############################################################################################################
+############################################## Oletimes #####################################################
+#############################################################################################################
+oletimes 0.51 - http://decalage.info/python/oletools
+THIS IS WORK IN PROGRESS - Check updates regularly!
+Please report any issue at https://github.com/decalage2/oletools/issuess
+===============================================================================
+FILE: /home/upa/Descargas/prueba_doc.doc
+
++----------------------------+---------------------+---------------+
+| Stream/Storage name        | Modification Time   | Creation Time |
++----------------------------+---------------------+---------------+
+| Root                       | 2017-10-10 20:27:03 | None          |
+| '\x01CompObj'              | None                | None          |
+| '\x05DocumentSummaryInform | None                | None          |
+| ation'                     |                     |               |
+| '\x05SummaryInformation'   | None                | None          |
+| '1Table'                   | None                | None          |
+| 'Data'                     | None                | None          |
+| 'WordDocument'             | None                | None          |
++----------------------------+---------------------+---------------+
+#############################################################################################################
+############################################## Olevba #######################################################
+#############################################################################################################
+olevba 0.51 - http://decalage.info/python/oletools
+Flags        Filename                                                         
+-----------  -----------------------------------------------------------------
+OpX:-------- /home/upa/Descargas/prueba_docx.docx
+===============================================================================
+FILE: /home/upa/Descargas/prueba_docx.docx
+Type: OpenXML
+No VBA macros found.
+
+#############################################################################################################
+############################################## EXIF #########################################################
+#############################################################################################################
+ExifTool Version Number         : 10.94
+File Name                       : putty.exe
+Directory                       : /home/upa/Descargas
+File Size                       : 834 kB
+File Modification Date/Time     : 2018:04:06 11:32:33-05:00
+File Access Date/Time           : 2018:05:18 02:39:37-05:00
+File Inode Change Date/Time     : 2018:05:18 02:20:29-05:00
+File Permissions                : rwxrwxrwx
+Error                           : File format error
+#############################################################################################################
+############################################## Xortool ######################################################
+#############################################################################################################
+The most probable key lengths:
+[0;1;32m   1[0m:   [0;1;37m100.0%[0m
+Key-length can be [0;1m0*n[0m
+Key-length can be [0;1m1*n[0m
+Key-length can be [0;1m2*n[0m
+[0;33mMost possible char is needed to guess the key![0m
