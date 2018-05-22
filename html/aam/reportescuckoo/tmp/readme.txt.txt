@@ -1,0 +1,1 @@
+Carpeta temporal para los analisis de Cuckoo Sanbox.

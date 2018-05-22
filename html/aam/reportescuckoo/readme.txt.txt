@@ -1,0 +1,1 @@
+Carpeta con los enlaces simbolicos a los reportes de Cuckoo Sandbox.
